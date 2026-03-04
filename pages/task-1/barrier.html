@@ -9,135 +9,199 @@
        <link href="../../dist/output.css" rel="stylesheet">
     </head>
     <body class = "bg-[#FFFFFF]">
-        <div class="pt-20 px-6 md:px-20 lg:px-48">
-            <!-- Header -->
-            <hr>
-            <h1 class = "font-inter font-semibold text-lg text-secondary pt-2 pb-2">
-                TASK 1: FINDING INFORMATION
-            </h1>
-            <p class = "font-inter text-md text-secondary mt-1 italic pb-2">
-                Locate the company email address
-            </p>
-            <hr class = "mb-4">
+        <div class="flex min-h-screen">
+            <!-- Sidebar -->
+            <aside class="w-48 bg-primary text-white p-6 flex flex-col">
+                <button class="absolute top-4 left-8 text-white text-2xl">
+                    ✕
+                </button>
 
-            <div class = "relative" id = "taskWrapper">
-                <!-- Task background -->
-                <div class = "task-container bg-[#e8ecf8] font-inter p-12 rounded-3xl text-gray-400 max-h-[50vh] overflow-y-scroll">
-                    <h1 class = "text-2xl font-bold mb-6">
-                        ABOUT US
+                <nav class="flex flex-col gap-3 pt-20">
+                    <a href="../main-experience.html"
+                    class="px-4 py-2 rounded-lg hover:bg-white hover:text-primary transition">
+                        Homepage
+                    </a>
+
+                    <a href="task-1/tutorial.html"
+                    class="bg-white text-primary px-4 py-2 rounded-lg font-semibold">
+                        Task 1
+                    </a>
+
+                    <a href="task-2/tutorial.html"
+                    class="px-4 py-2 rounded-lg hover:bg-white hover:text-primary transition">
+                        Task 2
+                    </a>
+                </nav>
+            </aside>
+            <main class="flex-1 pt-10 px-20">
+                <!-- Top Header -->
+                <div class="mb-10">
+                    <h1 class="text-2xl font-semibold text-secondary mb-6">
+                        Task 1: Finding Information: Identify which key stops JAWS from speaking
                     </h1>
 
-                    <p class = "text-base mb-12">
-                        BrightPath is a digital subscription service offering productivity tools and learning
-                        resources. Our platform helps users manage tasks, track goals, and stay organized across devices.
-                    </p>
+                    <!-- Progress Bar -->
+                    <div class="flex items-start gap-4 mb-2">
 
-                    <!-- Placeholder for image-->
-                    <div class = "bg-neutral-200 rounded-3xl p-8 mb-12">
-                        <p class = "text-center">Placeholder for image</p>
-                    </div>
+                        <!-- Step 1 -->
+                        <div class="flex-1 text-center relative">
+                            <div class="h-2 bg-blue-600 rounded-full mb-4"></div>
 
-                    <!-- OUR SERVICES -->
-                    <h1 class = "text-2xl font-bold mb-6">
-                        OUR SERVICES
-                    </h1>
+                            <!-- Dot -->
+                            <div class="w-2 h-2 bg-blue-600 rounded-full absolute left-1/2 -translate-x-1/2 top-3"></div>
 
-                    <p class = "text-base mb-2">
-                        We offer:
-                    </p>
-                    <ul class = "text-base list-disc list-inside mb-6">
-                        <li class = "mb-2">Personalized productivity dashboards</li>
-                        <li class = "mb-2">Cloud-based document storage</li>
-                        <li class = "mb-2">Weekly learning modules</li>
-                        <li class = "mb-2">Account customization features</li>
-                    </ul>
-                    <p class = "text-lg mb-12">
-                        All features are accessible via desktop and mobile.
-                    </p>
-
-                    <!-- SUPPORT -->
-                    <h1 class = "text-2xl font-bold mb-6">
-                        SUPPORT
-                    </h1>
-                    <p class = "text-base mb-4">
-                        We are committed to providing reliable service and responsive customer care. 
-                    </p>
-                    <p class = "text-base mb-4">
-                        If you experience technical issues, billing concerns, or account-related questions, our support team is here to help.
-                    </p>
-                    <p class = "text-base mb-12">
-                        You may also consult our Help Center for common troubleshooting guides. 
-                    </p>
-
-                    <!-- CONTACT -->
-                    <h1 class = "text-2xl font-bold mb-6">
-                        CONTACT
-                    </h1>
-                    <p class = "text-base mb-4">
-                        If you need further assistance, please contact our support team directly.
-                    </p>
-                    <p class = "text-base mb-4">
-                    Email: <a href = "reflection.html" class = "underline cursor-pointer">support@brightpath.com</a>
-                    <br class = "mb-2">
-                    Phone: (123) 456-7890
-                    </p>
-                    <p class = "text-base mb-8">
-                        Our support team responds within 1-2 business days.
-                    </p>
-                </div>
-
-                <div class = "task-container bg-[#e8ecf8] mb-8 rounded-3xl mt-4">
-                    <div class = "rounded-3xl p-8">
-                        <div class = "flex">
-                            <!-- TUTORIAL -->
-                            <div class = "flex-1 bg-gradient-to-br from-primary to-purple-400 text-white
-                                        rounded-2xl relative z-40 px-6 py-4 shadow-[0_5px_30px_rgba(55,65,81,0.5)] text-center font-semibold
-                                        flex items-center justify-center gap-3">
-                                
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-6">
-                                    <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
-                                </svg>
-                                <span>TUTORIAL</span>
-                            </div>
-
-                            <!-- TASK -->
-                            <div class = "flex-1 bg-gradient-to-br from-primary to-purple-400 text-white -ml-8
-                                        rounded-2xl relative z-30 px-6 py-4 shadow-[0_5px_30px_rgba(55,65,81,0.5)] text-center font-semibold
-                                        flex items-center justify-center gap-3">
-                                
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-6">
-                                    <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
-                                </svg>
-                                <span>TASK</span>
-                            </div>
-
-                            <!-- BARRIER -->
-                            <div class = "flex-1 bg-gradient-to-br from-primary to-purple-400 text-white -ml-8
-                                        rounded-2xl relative z-20 px-6 py-4 shadow-[0_5px_30px_rgba(55,65,81,0.5)] text-center font-semibold
-                                        flex items-center justify-center gap-3">
-                                
-                                <svg width="24" height="24" viewBox="-25 -25 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" style="transform:rotate(-90deg)">
-                                    <circle r="90" cx="100" cy="100" fill="transparent" stroke="#828282" stroke-width="16px"></circle>
-                                    <circle r="90" cx="100" cy="100" stroke="#ffffff" stroke-width="16px" stroke-linecap="round" stroke-dashoffset="164px" fill="transparent" stroke-dasharray="565.48px"></circle>
-                                </svg>
-                                <span>BARRIER</span>
-                            </div>
-
-                            <!-- REFLECTION -->
-                            <div class = "flex-1 bg-gray-400 text-white -ml-8
-                                        rounded-2xl relative z-10 px-6 py-4 shadow-[0_5px_30px_rgba(55,65,81,0.5)] text-center font-semibold
-                                        flex items-center justify-center gap-3">
-                                
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-6">
-                                    <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                                </svg>
-                                <span>REFLECTION</span>
-                            </div>
+                            <p class="text-sm text-gray-600 mt-4">Tutorial</p>
                         </div>
-                        <p class = "text-secondary text-lg mt-6 text-center"><span class = "font-semibold text-secondary-800">ACTION: Locate and click the email address using a mouse, keyboard or touchscreen.</p>
+
+                        <!-- Step 2 -->
+                        <div class="flex-1 text-center relative">
+                            <div class="h-2 bg-blue-600 rounded-full mb-4"></div>
+
+                            <!-- Dot -->
+                            <div class="w-2 h-2 bg-blue-600 rounded-full absolute left-1/2 -translate-x-1/2 top-3"></div>
+
+                            <p class="text-sm text-gray-600 mt-4">Task</p>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="flex-1 text-center relative">
+                            <div class="h-2 bg-blue-600 rounded-full mb-4"></div>
+
+                            <!-- Dot -->
+                            <div class="w-2 h-2 bg-blue-600 rounded-full absolute left-1/2 -translate-x-1/2 top-3"></div>
+
+                            <p class="text-sm text-gray-600 mt-4">Barrier</p>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="flex-1 text-center relative">
+                            <div class="h-2 bg-gray-300 rounded-full mb-4"></div>
+
+                            <!-- Dot -->
+                            <div class="w-2 h-2 bg-gray-300 rounded-full absolute left-1/2 -translate-x-1/2 top-3"></div>
+
+                            <p class="text-sm text-gray-600 mt-4">Reflection</p>
+                        </div>
+
                     </div>
                 </div>
-            </div>
+
+                <div class = "relative" id = "taskWrapper">
+                    <div class="task-container bg-gray-100 text-gray-500 font-serif p-12 rounded-3xl max-h-[65vh] overflow-y-scroll border border-gray-200">
+
+                        <!-- Title -->
+                        <h2 class="text-base font-medium mt-6 mb-2">
+                            JAWS (screen reader)
+                        </h2>
+
+                        <!-- Intro -->
+                        <p class="text-base leading-relaxed mb-1">
+                            Job Access With Speech (JAWS) is a computer screen reader program for Microsoft Windows that allows blind and visually impaired users to read the screen either with a text-to-speech output or by a refreshable Braille display. JAWS is produced by the Blind and Low Vision Group of 
+                            Freedom Scientific.
+                            A 2023–2024 screen reader user survey by WebAIM
+                            found JAWS to be the most popular desktop/laptop screen reader worldwide for primary usage (40.5%), while 60.5% of participants listed it as a commonly used screen reader, ranking it second in this measure behind NVDA.
+                            JAWS supports Windows 10 and Windows 11 along with all versions of Windows Server since 2016. 
+                            There are two versions of the program: the Home edition and the Professional edition for commercial environments. Before JAWS 16, the Home edition was called Standard, and only worked on the home editions of Windows operating systems. A DOS version is free.
+                            The JAWS Scripting Language allows users to operate programs without standard Windows controls and applications that were not designed for accessibility.
+                        </p>
+
+                        <!-- History -->
+                        <h2 class="text-base font-medium mt-6 mb-2">
+                            History
+                        </h2>
+
+                        <p class="text-base leading-relaxed mb-6">
+                            JAWS was originally released in 1989 by Ted Henter, a former motorcycle racer who lost his sight in a 1978 automobile accident. In 1985, Henter, along with a US$180,000 investment from Bill Joyce, founded the Henter-Joyce Corporation in St. Petersburg, Florida. Joyce sold his interest in the company back to Henter in 1990. In April 2000, Henter-Joyce, Blazie Engineering, and Arkenstone, Inc. merged to form Freedom Scientific.
+                            JAWS was originally created for the MS-DOS operating system. It was one of several screen readers giving blind users access to text-mode MS-DOS applications. A feature unique to JAWS at the time was its use of cascading menus, in the style of the popular Lotus 1-2-3 application. What set JAWS apart from other screen readers of the era was its use of macros that allowed users to customize the user interface and work better with various applications.
+                            In 1993, Henter-Joyce released a highly modified version of JAWS for people with learning disabilities. This product, called WordScholar, is no longer available.
+                        </p>
+
+                        <!-- JAWS for Windows -->
+                        <h2 class="text-base font-medium mt-6 mb-2">
+                            JAWS for Windows
+                        </h2>
+
+                        <p class="text-base leading-relaxed mb-6">
+                            In 1992, as Microsoft Windows became more popular, Oppermann began work on a new version of JAWS. A principal design goal was not to interfere with the natural user interface of Windows and to continue to provide a strong macro facility. Test and beta versions of JAWS for Windows (JFW) were shown at conferences throughout 1993 and 1994. During this time, developer 
+                            <span id="correctAnswer"
+                                class="text-base">
+                                Glen Gordon
+                            </span>
+                            started working on the code, ultimately taking over its development when Oppermann was hired by Microsoft in November 1994. Shortly afterwards, in January 1995, JAWS for Windows 1.0 was released. A new revision of JAWS for Windows is released about once a year, with minor updates in between.
+                        </p>
+
+                        <!-- Features -->
+                        <h2 class="text-base font-medium mt-6 mb-2">
+                            Features
+                        </h2>
+
+                        <p class="text-base leading-relaxed mb-4">
+                            JAWS allows all major functions of the Microsoft Windows operating system to be controlled with keyboard shortcuts and spoken feedback. These shortcuts are kept as consistent as possible throughout most programs, but the very high number of functions needed to fluidly use modern computer software effectively requires the end user to memorize many specific keystrokes. Virtually every aspect of JAWS can be customized by the user, including all keystrokes and factors such as reading speed, granularity used when reading punctuation, and hints. JAWS also includes a scripting language to automate tasks and make more complex modifications to the program's behavior.
+
+                            The software includes a distinct mode designed specifically for web browsers, activated when a browser is in the foreground. When browsing web pages, JAWS first declares the title and number of links. Speech can be stopped with the 
+                            control key, lines are navigated with the ↑/↓ arrow keys, and the tab key moves between links and controls. Specific letter keys on the keyboard can be pressed to navigate to the next or previous element of a specific type, such as text boxes or checkboxes.[10] JAWS can access headings in Word and PDF documents in a similar fashion
+                        </p>
+
+                        <!-- Scripting Language -->
+                        <h2 class="text-base font-medium mt-6 mb-2">
+                            Scripting Language
+                        </h2>
+
+                        <p class="text-base leading-relaxed mb-6">
+                            JAWS Scripting Language (JSL) is a proprietary programming language that allows the interoperation of JAWS. It is a compiled language, allowing for source code protection. "JAWS scripting" commonly refers to customization of the built-in, user-editable utilities of JAWS and editing of its configuration files, as well as the writing of original scripts. JSL acts as an API and allows users to combine JAWS scripting, Microsoft Active Accessibility scripting, and document object model scripting.
+                        </p>
+
+                    </div>
+
+                    <!-- Overlay -->
+                    <div id="completeOverlay"
+                        class="hidden absolute inset-0 bg-gradient-to-br from-primary to-purple-500 
+                                text-white rounded-3xl p-16 z-50 flex flex-col">
+
+                        <!-- Content -->
+                        <div class="max-w-4xl">
+
+                            <h1 class="text-3xl font-bold mb-8">
+                                Task complete!
+                            </h1>
+
+                            <p class="text-lg mb-6">
+                                You have successfully identified the answer.
+                            </p>
+
+                            <p class="text-lg mb-16">
+                               Glen Gordon took over the development of the JAWS screen reader after when Oppermann was hired by Microsoft in November 1994
+                            </p>
+
+                            <h2 class="text-2xl font-bold mb-4">
+                                Click <strong>CONTINUE</strong> to proceed to reflection.
+                            </h2>
+
+                        </div>
+
+                        <!-- Button Row -->
+                        <div class="flex justify-end mt-auto">
+                            <a href="reflection.html"
+                                id="continueButton"
+                                class="bg-white text-primary font-semibold px-8 py-4 
+                                        rounded-full shadow-xl text-base 
+                                        flex items-center gap-3 w-auto">
+
+                                CONTINUE
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
         <script src="../../src/main.js"></script>
     </body>
