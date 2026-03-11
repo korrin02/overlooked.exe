@@ -1,212 +1,228 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Overlooked.exe</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overlooked.exe</title>
 
-        <!--Script to import tailwind css-->
-       <link href="../dist/output.css" rel="stylesheet">
-    </head>
-    <body class = "bg-[#FFFFFF]">
-        <div class="flex min-h-screen">
-            <!-- Sidebar -->
-            <aside class="w-50 bg-primary text-white p-4 flex flex-col relative">
-                <button class="absolute top-6 left-6 text-white text-3xl">
-                    ✕
-                </button>
+    <!--Script to import tailwind css-->
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#FFFFFF]">
+    <div class="flex min-h-screen">
+      <!-- Sidebar -->
+      <aside class="w-50 bg-primary text-white p-4 flex flex-col relative">
+        <button class="absolute top-6 left-6 text-white text-3xl">✕</button>
 
-                <nav class="flex flex-col mt-16">
+        <nav class="flex flex-col mt-16">
+          <a
+            href="#"
+            class="flex items-center gap-3 py-2 px-4 rounded-md bg-white text-primary text-sm font-semibold font-manrope"
+          >
+            <span class="text-sm font-semibold font-manrope">0</span>
+            <span>Homepage</span>
+          </a>
 
-                    <a href="#"
-                        class="flex items-center gap-3 py-3 px-3 rounded-xl bg-white text-primary text-sm font-semibold">
+          <hr class="border-white/40 my-2 mx-2" />
 
-                        <span class="text-sm font-semibold font-manrope">0</span>
-                        <span>Homepage</span>
-                    </a>
+          <a
+            href="task-1/tutorial.html"
+            class="flex items-center gap-3 py-2 px-4 text-sm font-manrope"
+          >
+            <span class="text-sm font-semibold font-manrope">1</span>
+            <span>Finding Information</span>
+          </a>
 
-                    <hr class="border-white/40 my-1">
+          <hr class="border-white/40 my-2 mx-2" />
 
-                    <a href="task-1/tutorial.html"
-                    class="flex items-center gap-3 py-3 px-3 text-sm font-manrope">
+          <a
+            href="task-2/tutorial.html"
+            class="flex items-center gap-3 py-2 px-4 text-sm font-manrope"
+          >
+            <span class="text-sm font-bold font-manrope">2</span>
+            <span>Navigating A Menu</span>
+          </a>
 
-                        <span class="text-sm font-semibold font-manrope">1</span>
-                        <span>Finding Information</span>
-                    </a>
+          <hr class="border-white/40 my-2 mx-2" />
+        </nav>
+      </aside>
+      <!-- Main -->
+      <main
+        class="flex-1 pt-20 px-10 lg:px-16 xl:px-20 max-w-[1200px] mx-auto w-full"
+      >
+        <!-- Header -->
+        <h1 class="text-6xl font-manrope font-extrabold text-secondary mb-6">
+          The Main Experience
+        </h1>
+        <hr class="mb-6" />
+        <p class="text-lg font-inter text-secondary mb-10">
+          This interactive experience explores how digital accessibility
+          barriers affect everyday tasks.
+        </p>
 
-                    <hr class="border-white/40 my-1">
+        <!-- Steps -->
+        <h2 class="text-3xl font-manrope font-extrabold text-secondary mb-8">
+          How it Works
+        </h2>
+        <div class="space-y-8">
+          <!-- Step 1 -->
+          <div class="flex gap-4 items-start">
+            <div class="w-16 text-6xl font-bold text-secondary -mt-1">1</div>
+            <div>
+              <h3 class="text-lg font-inter font-semibold text-secondary">
+                Complete the Task
+              </h3>
+              <p class="text-md font-inter text-secondary">
+                Perform a simple action (e.g., find contact information).
+              </p>
+            </div>
+          </div>
 
-                    <a href="task-2/tutorial.html"
-                    class="flex items-center gap-3 py-3 px-3 text-sm font-manrope">
+          <!-- Step 2 -->
+          <div class="flex gap-4 items-start">
+            <div class="w-16 text-6xl font-bold text-secondary -mt-1">2</div>
+            <div>
+              <h3 class="text-lg font-inter font-semibold text-secondary">
+                Experience the Barrier
+              </h3>
+              <p class="text-md font-inter text-secondary">
+                The interface will change to simulate an accessibility
+                constraint.
+              </p>
+            </div>
+          </div>
 
-                        <span class="text-sm font-bold font-manrope">2</span>
-                        <span>Navigating A Menu</span>
-                    </a>
+          <!-- Step 3 -->
+          <div class="flex gap-4 items-start">
+            <div class="w-16 text-6xl font-bold text-secondary -mt-1">3</div>
+            <div>
+              <h3 class="text-lg font-inter font-semibold text-secondary">
+                Reflect and Learn
+              </h3>
+              <p class="text-md font-inter text-secondary">
+                Review how the experience differed and who is impacted.
+              </p>
+            </div>
+          </div>
+        </div>
 
-                    <hr class="border-white/40 my-1">
+        <!-- Explore the tasks -->
+        <h2
+          class="text-3xl font-manrope font-extrabold text-secondary mt-16 mb-4"
+        >
+          Explore the Tasks
+        </h2>
+        <p class="text-lg font-inter text-secondary mb-8">
+          Complete each task in its accessible form, then experience how an
+          intentional barrier changes the interaction.
+        </p>
 
-                </nav>
-            </aside>
-            <!-- Main -->
-            <main class="flex-1 pt-20 px-10 lg:px-16 xl:px-20 max-w-[1200px] mx-auto w-full">
-                <!-- Header -->
-                <h1 class = "text-4xl font-manrope font-extrabold text-secondary mb-6">The Main Experience</h1>
-                <hr class = "mb-6">
-                <p class = "text-lg font-inter text-secondary mb-10">This interactive experience explores how digital accessibility barriers affect everyday tasks.</p>
+        <!-- Task grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+          <!-- Card 1 -->
+          <div
+            class="bg-gradient-to-br from-primary to-purple-400 text-white p-8 rounded-3xl flex flex-col"
+          >
+            <div>
+              <h3 class="text-xl font-bold mb-4 font-manrope">
+                Task 1: <br />Finding Information
+              </h3>
 
-                <!-- Steps -->
-                <h2 class = "text-3xl font-manrope font-extrabold text-secondary mb-8">How it Works</h2>
-                <div class="space-y-8">
+              <p class="text-base mb-6">Locate information on a webpage.</p>
 
-                    <!-- Step 1 -->
-                    <div class="flex gap-4 items-start">
-                        <div class="w-16 text-6xl font-bold text-secondary -mt-1">1</div>
-                        <div>
-                            <h3 class="text-lg font-inter font-semibold text-secondary">
-                                Complete the Task
-                            </h3>
-                            <p class="text-md font-inter text-secondary">
-                                Perform a simple action (e.g., find contact information).
-                            </p>
-                        </div>
-                    </div>
+              <p class="text-lg font-semibold">Estimated completion time:</p>
 
-                    <!-- Step 2 -->
-                    <div class="flex gap-4 items-start">
-                        <div class="w-16 text-6xl font-bold text-secondary -mt-1">2</div>
-                        <div>
-                            <h3 class="text-lg font-inter font-semibold text-secondary">
-                                Experience the Barrier
-                            </h3>
-                            <p class="text-md font-inter text-secondary">
-                                The interface will change to simulate an accessibility constraint.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Step 3 -->
-                    <div class="flex gap-4 items-start">
-                        <div class="w-16 text-6xl font-bold text-secondary -mt-1">3</div>
-                        <div>
-                            <h3 class="text-lg font-inter font-semibold text-secondary">
-                                Reflect and Learn
-                            </h3>
-                            <p class="text-md font-inter text-secondary">
-                                Review how the experience differed and who is impacted.
-                            </p>
-                        </div>
-                    </div>
-
+              <p class="text-base mb-6">2-4 minutes</p>
             </div>
 
-                <!-- Explore the tasks -->
-                <h2 class = "text-3xl font-manrope font-extrabold text-secondary mt-16 mb-4">Explore the Tasks</h2>
-                <p class = "text-lg font-inter text-secondary mb-8">Complete each task in its accessible form, then experience how 
-                    an intentional barrier changes the interaction.
-                </p>
+            <!-- Button -->
+            <a
+              href="task-1/tutorial.html"
+              class="mt-auto inline-flex gap-3 items-center justify-between bg-primary px-6 py-4 rounded-3xl shadow-lg"
+            >
+              START TASK 01
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
 
-                <!-- Task grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
-                    <!-- Card 1 -->
-                    <div class="bg-gradient-to-br from-primary to-purple-400 text-white p-8 rounded-3xl flex flex-col">
+          <div
+            class="bg-gradient-to-br from-primary to-purple-400 text-white p-8 rounded-3xl flex flex-col"
+          >
+            <div>
+              <h3 class="text-xl font-bold mb-4 font-manrope">
+                Task 2: <br />Navigating a Menu
+              </h3>
 
-                        <div>
-                            <h3 class="text-xl font-bold mb-4 font-manrope">
-                                Task 1: <br>Finding Information
-                            </h3>
+              <p class="text-base mb-6">
+                Update how you receive notifications in account settings.
+              </p>
 
-                            <p class="text-base mb-6">
-                                Locate information on a webpage.
-                            </p>
+              <p class="text-lg font-semibold">Estimated completion time:</p>
 
-                            <p class="text-lg font-semibold">
-                                Estimated completion time:
-                            </p>
+              <p class="text-base mb-6">3-5 minutes</p>
+            </div>
 
-                            <p class="text-base mb-6">
-                                2-4 minutes
-                            </p>
-                        </div>
+            <!-- Button -->
+            <a
+              href="task-2/tutorial.html"
+              class="mt-auto inline-flex gap-3 items-center justify-between bg-primary px-6 py-4 rounded-3xl shadow-lg"
+            >
+              START TASK 02
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
 
-                        <!-- Button -->
-                        <a href="task-1/tutorial.html"
-                        class="mt-auto inline-flex gap-3 items-center justify-between bg-primary px-6 py-4 rounded-3xl shadow-lg">
-                            START TASK 01
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                                class="w-6 h-6">
-                                <path fill-rule="evenodd"
-                                    d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                    </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-gray-300 text-gray-600 rounded-3xl flex items-center justify-center min-h-[220px]"
+          >
+            <h3 class="text-xl font-semibold">Coming Soon</h3>
+          </div>
 
-                    <div class="bg-gradient-to-br from-primary to-purple-400 text-white p-8 rounded-3xl flex flex-col">
+          <!-- Card 4 -->
+          <div
+            class="bg-gray-300 text-gray-600 rounded-3xl flex items-center justify-center min-h-[220px]"
+          >
+            <h3 class="text-xl font-semibold">Coming Soon</h3>
+          </div>
 
-                        <div>
-                            <h3 class="text-xl font-bold mb-4 font-manrope">
-                                Task 2: <br>Navigating a Menu
-                            </h3>
+          <!-- Card 5 -->
+          <div
+            class="bg-gray-300 text-gray-600 rounded-3xl flex items-center justify-center min-h-[220px]"
+          >
+            <h3 class="text-xl font-semibold">Coming Soon</h3>
+          </div>
 
-                            <p class="text-base mb-6">
-                                Update how you receive notifications in account settings.
-                            </p>
-
-                            <p class="text-lg font-semibold">
-                                Estimated completion time:
-                            </p>
-
-                            <p class="text-base mb-6">
-                                3-5 minutes
-                            </p>
-                        </div>
-
-                        <!-- Button -->
-                        <a href="task-2/tutorial.html"
-                        class="mt-auto inline-flex gap-3 items-center justify-between bg-primary px-6 py-4 rounded-3xl shadow-lg">
-                            START TASK 02
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                                class="w-6 h-6">
-                                <path fill-rule="evenodd"
-                                    d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="bg-gray-300 text-gray-600 rounded-3xl flex items-center justify-center min-h-[220px]">
-                        <h3 class="text-xl font-semibold">
-                            Coming Soon
-                        </h3>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="bg-gray-300 text-gray-600 rounded-3xl flex items-center justify-center min-h-[220px]">
-                        <h3 class="text-xl font-semibold">
-                            Coming Soon
-                        </h3>
-                    </div>
-
-                    <!-- Card 5 -->
-                    <div class="bg-gray-300 text-gray-600 rounded-3xl flex items-center justify-center min-h-[220px]">
-                        <h3 class="text-xl font-semibold">
-                            Coming Soon
-                        </h3>
-                    </div>
-
-                    <!-- Card 6 -->
-                    <div class="bg-gray-300 text-gray-600 rounded-3xl flex items-center justify-center min-h-[220px]">
-                        <h3 class="text-xl font-semibold">
-                            Coming Soon
-                        </h3>
-                    </div>
-                </div>
-            </main>
+          <!-- Card 6 -->
+          <div
+            class="bg-gray-300 text-gray-600 rounded-3xl flex items-center justify-center min-h-[220px]"
+          >
+            <h3 class="text-xl font-semibold">Coming Soon</h3>
+          </div>
         </div>
-    </body>
+      </main>
+    </div>
+  </body>
 </html>
