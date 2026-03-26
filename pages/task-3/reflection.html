@@ -14,12 +14,9 @@
       <aside
         class="w-50 bg-primary text-white p-4 flex flex-col sticky top-0 h-screen"
       >
-        <a
-          href="https://overlooked-exe.carrd.co"
-          class="absolute top-6 left-6 text-white text-3xl"
-        >
+        <button id="exitBtn" class="absolute top-6 left-6 text-white text-3xl">
           ✕
-        </a>
+        </button>
 
         <nav class="flex flex-col mt-16">
           <a
@@ -338,6 +335,56 @@ step version?
                 SCROLL BACK TO TOP ↑
               </a>
             </div>
+          </div>
+        </div>
+        <div
+          id="exitOverlay"
+          class="fixed inset-0 bg-black/40 hidden items-center justify-center z-50"
+        >
+          <div
+            class="bg-white rounded-2xl shadow-xl p-16 w-[600px] max-w-[90vw] relative"
+          >
+            <!-- X close -->
+            <button
+              id="closeExitOverlay"
+              class="absolute top-4 left-4 text-gray-500 text-xl"
+            >
+              ✕
+            </button>
+
+            <h2 class="text-3xl font-bold mb-2 font-manrope text-[#404040]">
+              Leave the experience?
+            </h2>
+            <p class="text-gray-500 mb-4">
+              You will be returned to the home page.
+            </p>
+
+            <hr class="mb-8" />
+
+            <p class="text-gray-600 mb-6">
+              Exiting now will bring you back to the home page. Any tasks
+              currently in progress will need to be restarted when you return.
+            </p>
+
+            <div class="flex items-center gap-4">
+              <button
+                id="stayBtn"
+                class="bg-blue-600 text-white px-6 py-2 rounded-xl"
+              >
+                CONTINUE SESSION →
+              </button>
+
+              <a
+                href="https://overlooked-exe.carrd.co"
+                class="border border-blue-600 text-blue-600 px-6 py-2 rounded-xl"
+              >
+                EXIT EXPERIENCE
+              </a>
+            </div>
+
+            <p class="text-xs text-gray-400 mt-4 text-center">
+              Task progress is not saved between sessions.
+            </p>
           </div>
         </div>
       </main>

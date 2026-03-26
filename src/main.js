@@ -542,3 +542,29 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const exitBtn = document.getElementById("exitBtn");
+  const exitOverlay = document.getElementById("exitOverlay");
+  const closeExitOverlay = document.getElementById("closeExitOverlay");
+  const stayBtn = document.getElementById("stayBtn");
+
+  if (exitBtn && exitOverlay) {
+    exitBtn.addEventListener("click", () => {
+      exitOverlay.classList.remove("hidden");
+      exitOverlay.classList.add("flex");
+    });
+  }
+
+  if (closeExitOverlay) {
+    closeExitOverlay.addEventListener("click", () => {
+      exitOverlay.classList.add("hidden");
+    });
+  }
+
+  if (stayBtn) {
+    stayBtn.addEventListener("click", () => {
+      exitOverlay.classList.add("hidden");
+    });
+  }
+});
