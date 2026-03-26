@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (profileBtn && profileMenu) {
     profileBtn.addEventListener("click", () => {
       profileMenu.classList.toggle("hidden");
+      document.body.classList.toggle("no-mouse");
     });
   }
 
