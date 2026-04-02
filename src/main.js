@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener("keydown", (e) => {
       if (overlay && !overlay.classList.contains("hidden")) return;
 
-      if (e.key !== "Enter") return;
+      if (e.key !== "Enter" && e.key !== " ") return;
 
       const el = document.activeElement;
       if (!el) return;
